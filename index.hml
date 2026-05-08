@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moe Kyaw Aung | Supreme Pro Max Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Dark/Light Mode Toggle -->
+<div class="theme-toggle">
+  <button id="theme-btn">🌙</button>
+</div>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="container nav-container">
+    <a href="#hero" class="logo">Moe Kyaw Aung</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero">
+  <div class="container hero-container">
+    <img src="https://www.gravatar.com/avatar/moekyawaung2026?s=200" alt="Moe Kyaw Aung" class="hero-avatar">
+    <h1 class="fade-in">Hello, I'm Moe Kyaw Aung</h1>
+    <p class="fade-in delay1">Full-Stack Developer | UI/UX Designer | Tech Enthusiast</p>
+    <a href="#contact" class="btn fade-in delay2">Hire Me</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <h2 class="fade-in">About Me</h2>
+    <div class="about-content">
+      <div class="about-text fade-in delay1">
+        <p>I’m a passionate developer building responsive, dynamic, and user-friendly web applications with modern technologies.</p>
+        <h3>Skills</h3>
+        <ul class="skills">
+          <li>HTML / CSS / JS</li>
+          <li>React / Next.js</li>
+          <li>Angular / Tailwind / Bootstrap</li>
+          <li>Gatsby / Flutter Web</li>
+          <li>Kotlin Ktor / Ruby Sinatra</li>
+        </ul>
+      </div>
+      <div class="about-image fade-in delay2">
+        <img src="https://www.gravatar.com/avatar/moekyawaung13721?s=200" alt="Moe Kyaw Aung">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h2 class="fade-in">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card tilt-card">
+        <div class="project-content">
+          <h3>Bootstrap Portfolio</h3>
+          <p>Responsive portfolio built with Bootstrap framework.</p>
+          <a href="https://github.com/Dev-moe-kyawaung/moekyawaung-bootstrap-portfolio" target="_blank">View Repo</a>
+        </div>
+      </div>
+      <div class="project-card tilt-card">
+        <div class="project-content">
+          <h3>React Portfolio</h3>
+          <p>Modern React portfolio with reusable components.</p>
+          <a href="https://github.com/Dev-moe-kyawaung/moekyawaung-react-portfolio" target="_blank">View Repo</a>
+        </div>
+      </div>
+      <div class="project-card tilt-card">
+        <div class="project-content">
+          <h3>HTML/CSS Portfolio</h3>
+          <p>Simple static portfolio built with HTML & CSS.</p>
+          <a href="https://github.com/Dev-moe-kyawaung/moekyawaung-html-css-portfolio" target="_blank">View Repo</a>
+        </div>
+      </div>
+      <!-- Add more projects similarly -->
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="fade-in">Contact Me</h2>
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain" class="contact-form fade-in delay1">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Floating Social Links -->
+<div class="floating-social">
+  <a href="https://github.com/Dev-moe-kyawaung" target="_blank">GitHub</a>
+  <a href="https://gravatar.com/moekyawaung2026" target="_blank">Gravatar</a>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container footer-container">
+    <p>&copy; 2026 Moe Kyaw Aung. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
