@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cyber-dark text-white overflow-x-hidden;
+  background-image:
+    radial-gradient(circle at top left, rgba(0,255,255,.12), transparent 28%),
+    radial-gradient(circle at top right, rgba(255,0,153,.12), transparent 28%),
+    linear-gradient(180deg, #050816 0%, #07111f 100%);
+}
+
+.neon-text {
+  background: linear-gradient(90deg, #00f5ff, #ff4fd8, #ffe600);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.scanlines::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,.03),
+    rgba(255,255,255,.03) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  mix-blend-mode: screen;
+  opacity: .18;
+  z-index: 50;
+}
+
+.cyber-frame {
+  clip-path: polygon(
+    10px 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0 calc(100% - 10px),
+    0 10px
+  );
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0,245,255,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,245,255,.08) 1px, transparent 1px);
+  background-size: 42px 42px;
+  opacity: .18;
+}
+
+.skill-chip {
+  @apply border border-white/15 bg-white/5 px-3 py-1 rounded-lg text-sm text-white/80 hover:text-cyan-300 hover:border-cyan-400/50 transition-colors;
+}
+
+.hero-btns {
+  @apply flex items-center gap-4 mt-8;
+}
+
+.btn-primary {
+  @apply px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-yellow-300 text-black font-bold hover:scale-105 transition-transform;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 rounded-xl bg-white/10 text-white font-semibold hover:bg-white/20 transition-colors;
+}
+
+.fade-up {
+  @apply opacity-0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.light-mode {
+  @apply bg-gray-100 text-gray-900;
+  background-image:
+    radial-gradient(circle at top left, rgba(0,245,255,.08), transparent 28%),
+    radial-gradient(circle at top right, rgba(255,0,153,.08), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #e0e7ff 100%);
+}
+
+.light-mode .scanlines::before {
+  opacity: .08;
+}
+
+.light-mode .neon-text {
+  background: linear-gradient(90deg, #0891b2, #be185d, #a16207);
+}
